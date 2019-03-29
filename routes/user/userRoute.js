@@ -5,5 +5,6 @@ const validate = require('../test');
 Router.route('/getUser').get(validate, userService.getUser);
 Router.route('/addUser').post(validate, userService.addUser);
 Router.route('/getOneUser/:id').get(validate, userService.getOneUser);
+Router.route('/getPdf').get(validate, userService.getPdf);
 
 module.exports = Router;
